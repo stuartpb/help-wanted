@@ -160,3 +160,7 @@ This would be a standalone app exclusively for account management (which, you ma
 ### What needs to be done
 
 All of it, including the basic architecture and design. This doesn't even have a logo.
+
+## And many, many more
+
+Ask me about [issue #1](https://github.com/stuartpb/help-wanted/issues/1).
