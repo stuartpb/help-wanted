@@ -6,7 +6,7 @@ This is a list of all the projects I've started, done a little work on, and gott
 
 ## [Plushu](https://github.com/plushu)
 
-A plugin-based tool for crafting a user account on a host that can perform high-level dev/ops tasks. It goes hand in hand with a set of plugins (collectively, "Plus**k**u"), which create a mostly Heroku-compatible application deployment system (minus the "scaling to multiple hosts" part).
+A plugin-based command-line tool for crafting a user account on a host that can perform high-level dev/ops tasks. It goes hand in hand with a set of plugins (collectively, "Plus**k**u"), which create a mostly Heroku-compatible application deployment system (minus the "scaling to multiple hosts" part).
 
 Right now, it's still pretty much in the "only the person who wrote this should use it" stage of development, since it doesn't really have a solid update mechanism, and I'm planning on introducing a few more breaking changes before I consider it "ready for public consumption".
 
