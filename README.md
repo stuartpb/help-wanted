@@ -61,9 +61,11 @@ A Chrome app that makes cloud development of Chrome extensions significantly eas
 
 ## What needs to be done
 
-The UI could use a fresh coat of paint, or really any coat of paint at all, since right now it's just a bunch of bare form components with no CSS floating around in a series of flexboxes, just waiting for a user to accidentally click the wrong button and inadvertently erase My Documents.
+The UI could use a fresh coat of paint - while there's some smart modality in place to make sure that only relevant controls are presented to the user at any given time, it's still not as attractive as it could be, and most (all) of the UI is unlabeled, even where an unobtrusive label could significantly improve clarity.
 
 The configuration format needs to be documented, since right now I'm the only one who knows how to do anythnig with it. In fact, EVERYTHING about how to use this tool needs to be documented in some series of YouTube videos or screencasts or blog posts or something. (Maybe there should be a blog for this.)
+
+The API for triggering pulls needs to be improved before this can really be useful for interoperability with an extension like [rejig](https://github.com/pulltool/rejig).
 
 The "database" of items, which is currently implemented as a single awkward array in chrome.storage.local, would work better as a PouchDB of independent documents that can't inadvertently overwrite each other.
 
