@@ -79,13 +79,26 @@ I've made a rough implementation of a Chrome extension for this, but the UI need
 
 This also needs the same work toward cloud-synchronizable user data as Tabalanche - a mechanism to log into the site without having the extension installed would also be useful. Account management is, as always, a beast - even more than usual, due to the increased security sensitivity of the data in question.
 
-## [Nilpass](https://github.com/nilpass)
+## [NilPass](https://github.com/nilpass)
 
-As interesting as Blotpass is, and as useful as it is on sites where you need easy access with a memorable password, it's overkill to use it for *every site*. What I really want, for most sites, is [passwordless login](https://passwordless.net/), using a link sent by email. Most sites don't implement passwordless.js directly, but you can effectively *emulate* the passwordless-login experience by abusing the "Forgot Password" feature. Nilpass would, consequently, be the most secure password manager possible: to log in to a site, you click the Nilpass button to send a password reset email, then follow the link to the password reset page. On the reset page, Nilpass automatically generates a password, similarly to how most password managers would, then (after logging in with the new password, if necessary) **immediately forgets the password**, making it so the "Forgot Password" path is the *only* way to gain access to the account in the future.
+As interesting as Blotpass is, and as useful as it is on sites where you need easy access with a memorable password, it's overkill to use it for *every site*. What I really want, for most sites, is [passwordless login](https://passwordless.net/), using a link sent by email. Most sites don't implement passwordless.js directly, but you can effectively *emulate* the passwordless-login experience by abusing the "Forgot Password" feature. Nilpass would, consequently, be the most secure password manager possible: to log in to a site, you click the NilPass button to send a password reset email, then follow the link to the password reset page. On the reset page, Nilpass automatically generates a password, similarly to how most password managers would, then (after logging in with the new password, if necessary) **immediately forgets the password**, making it so the "Forgot Password" path is the *only* way to gain access to the account in the future.
 
 ### What needs to be done
 
-Mostly, the value in this would be various smoothing techniques to make requesting the reset email, and generating the temporary password, as seamless as possible, using a combination of heuristics and specific site profiles. Right now, no code toward this has been written (apart from the profiles already collected for Blotpass, and [the logo I made to illustrate the concept](https://github.com/nilpass/nilpass-logo/blob/master/nilpass-logo.svg)).
+I launched the extension itself, and [a homepage explaining it](https://nilpass.com/), on April 1, 2017. (For some reason, nobody paid attention to it.) I threw it all together in under 24 hours, though, and the UI could use a layer of polish.
+
+The next steps for this, after polishing the UI a little, are to integrate data from the [Open Profilogical Web Survey](https://github.com/opws) and/or some heuristics to reduce the number of clicks involved in activating the password reset flow as low as possible. The ideal flow would be that, on clicking a "Log in with NilPass" link, the browser would automatically:
+
+- go to the "password reset" page
+- fill in the "password reset" form and submit it
+- watch for the password reset email to arrive
+- follow the link from that email
+- fill in the "new password" as required to set a new password and log in
+- forget the current password
+
+Currently, only the last two steps are handled by the extension, and they both require a manual click from the user.
+
+I've also been thinking that it might make sense to merge the functionality of Blotpass into this, instead of trying to develop two separate extensions.
 
 ## [PlugMap](https://github.com/plugmap)
 
