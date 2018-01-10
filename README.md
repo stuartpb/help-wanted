@@ -24,6 +24,18 @@ This is a project to map out the user account systems of every site on the web, 
 
 I've written a *lot* of profiles for this, and a fair amount of tooling (it was my Project of the Month, for the one month where I tried to hold to such a thing): what it could *really* use is just a second contributor, or somebody else *using* it. 
 
+## Various [Alphabinary Encoding](https://github.com/alphabi) projects
+
+So, basically, if you take the modern Latin alphabet, map the first thirteen letters to 0, and the last thirteen letters to 1, you've got a workable vocabulary to represent any binary data as a series of English words. There are *so many things* you can do with this, and I'm frankly kind of amazed that I seem to be the only person who's recognized and thought about this (after a lot of Google searching of the key words in describing it came back completely empty).
+
+The big obvious one is generating mnemonics for large numbers like hashes and crypto keys, but you can *also* use it to represent long-form data in a way that is *intrinsically* an expression of free speech, like the [DeCSS haiku][], but without having to make the data itself the subject of what you're writing.
+
+[DeCSS haiku]: https://en.wikipedia.org/wiki/DeCSS_haiku
+
+### What needs to be done
+
+Honestly, I just want people to start *talking* about this. Beyond that, I do kind of wish I had some kind of authorship tools, like a text editor that makes suggestions of appropriate words that would fit the next bits in a sequence: I've got a Lua script that looks up all the words that match a sequence written so far, but nothing that hones in on things like *meaning*, like a thesaurus.
+
 ## [BizPostcard](https://github.com/bizpostcard)
 
 I've never had an exchange of business cards generate an actual lead. What *has* worked for me has been handing my phone to the person I want to get in touch with, having them enter their email address, and sending them an email recapping what we talked about and what the next steps could be. I've drawn up a [pretty rough-shod icon for identifying the app](https://github.com/bizpostcard/bizpostcard-logo/blob/master/bizpostcard-icon.svg), which I would firmly classify as "good enough for now".
