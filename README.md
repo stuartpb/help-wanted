@@ -16,6 +16,14 @@ For one thing, Plushu could use a better description of just what exactly it's  
 
 Description aside, [here's every open issue across every plugin across the entire organization](https://waffle.io/plushu/plushu). I'd like to get the highest, biggest items in the "Under Consideration" list closed (specifically relating to "setup" bundles of plugins, so Plusku can have a solid future-facing upgrade path), then publish some kind of how-and-why guide explaining how to set it up.
 
+## [Open Profilogical Web Survey](https://github.com/opws)
+
+This is a project to map out the user account systems of every site on the web, from the URL of the registration page, to the requirements on passwords, to whether it accepts email addresses as a user ID.
+
+### What needs to be done
+
+I've written a *lot* of profiles for this, and a fair amount of tooling (it was my Project of the Month, for the one month where I tried to hold to such a thing): what it could *really* use is just a second contributor, or somebody else *using* it. 
+
 ## [BizPostcard](https://github.com/bizpostcard)
 
 I've never had an exchange of business cards generate an actual lead. What *has* worked for me has been handing my phone to the person I want to get in touch with, having them enter their email address, and sending them an email recapping what we talked about and what the next steps could be. I've drawn up a [pretty rough-shod icon for identifying the app](https://github.com/bizpostcard/bizpostcard-logo/blob/master/bizpostcard-icon.svg), which I would firmly classify as "good enough for now".
